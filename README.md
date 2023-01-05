@@ -1,2 +1,1 @@
-# homepage
-this is my homepage
+# this is just my homepage
