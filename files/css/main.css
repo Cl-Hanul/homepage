@@ -1,4 +1,42 @@
 body {
     margin: 0;
-    padding: 0;
+    background-color: #444;
+}
+main {
+    margin-top: 55px;
+}
+header.menu {
+    width: 100%;
+    height: 55px;
+    color: white;
+    background: #777a;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    position: fixed;
+}
+a.shortcut{
+    color: white;
+    text-decoration-line: none;
+    padding-right: 20px;
+}
+a.shortcut:hover{
+    color:#ffca88;
+}
+nav.shortcut{
+    margin: 10px;
+}
+aside.list{
+    background: #777;
+    float: left;
+    width: 15vw;
+    height:100vh;
+}
+article.main{
+    background-color: #a00;
+    float: right;
+    width:70%;
+    height: auto;
 }
