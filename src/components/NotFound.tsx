@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function NotFound() {
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ export default function NotFound() {
                 <h1>404 Page Not Found</h1>
                 <hr/>
                 <h2>Page Not Found</h2>
-                <a href="#" onClick={goPrevious}>Previous Page</a>
+                <Link to="" onClick={goPrevious}>Previous Page</Link>
             </div>
         </div>
     );
