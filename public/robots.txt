@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+```
+Normally i'm allowed to all get requests in my site.
+
+But your bot is hard to get my pages because this page uses 'react'.
+So when you want to get this page, use another request method.
+```
