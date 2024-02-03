@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 // css
 import './App.css';
@@ -11,9 +11,13 @@ import NotFound from './components/NotFound.tsx';
 function App() {
 	return (
 		<div className='App'>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Routes>
-					<Route path="/" element={<Home />}></Route>
+          {/* base */}
+					<Route path="/" element={<Navigate to="/home"></Navigate>}></Route>
+
+          {/* other */}
+          <Route path="/home" element={<Home />}></Route>
 
 					{/* NotFound 404 Error*/}
 					<Route path="*" element={<NotFound />}></Route>
